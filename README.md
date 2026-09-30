@@ -8,7 +8,7 @@ OpenWrt. Репозиторий не содержит персональные S
 
 ## Windows
 
-1. Откройте последний release и скачайте `vipntech-router-windows-pilot.7.zip`.
+1. Откройте последний release и скачайте `vipntech-router-windows-pilot.8.zip`.
 2. Полностью распакуйте ZIP.
 3. Дважды щёлкните `START-VIPNTECH.cmd` и следуйте подсказкам.
 4. Если программа изменила LAN-адрес, переподключитесь к Wi-Fi или кабелю и
