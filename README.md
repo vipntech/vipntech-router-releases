@@ -4,6 +4,8 @@
 OpenWrt. Репозиторий не содержит персональные Subscription URL, device tokens,
 пароли или VLESS-конфигурации.
 
+[Открыть список установочных релизов](https://github.com/vipntech/vipntech-router-releases/releases)
+
 ## Windows
 
 1. Откройте последний release и скачайте `vipntech-router-windows-pilot.5.zip`.
