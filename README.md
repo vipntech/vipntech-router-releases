@@ -8,28 +8,15 @@ OpenWrt. Репозиторий не содержит персональные S
 
 ## Windows
 
-1. Откройте последний release и скачайте `vipntech-router-windows-pilot.5.zip`.
-2. Распакуйте ZIP и откройте PowerShell в полученной папке.
-3. Проверьте release:
+1. Откройте последний release и скачайте `vipntech-router-windows-pilot.6.zip`.
+2. Полностью распакуйте ZIP.
+3. Дважды щёлкните `START-VIPNTECH.cmd` и следуйте подсказкам.
+4. Если программа изменила LAN-адрес, переподключитесь к Wi-Fi или кабелю и
+   снова запустите `START-VIPNTECH.cmd`.
 
-```powershell
-.\vipntech-router-setup-windows-amd64.exe verify-release `
-  --manifest .\release.json
-```
-
-4. Выполните read-only проверку роутера:
-
-```powershell
-.\vipntech-router-setup-windows-amd64.exe install `
-  --manifest .\release.json `
-  --router 192.168.1.1 `
-  --state-dir "$env:LOCALAPPDATA\VipnTech\routers\home" `
-  --dry-run
-```
-
-5. Повторите команду без `--dry-run`, чтобы установить ПО. Для явной смены
-   LAN-адреса добавьте, например, `--lan-ip 192.168.77.1` и следуйте подсказке
-   о переподключении.
+`CHECK-ROUTER.cmd` выполняет необязательную безопасную проверку без изменений.
+Вводить команды PowerShell или Command Prompt не требуется. Стандартная сборка
+ожидает OpenWrt на `192.168.1.1` и переводит LAN на `192.168.77.1/24`.
 
 Установщик не записывает firmware, разделы или bootloader и не проверяет
 модель роутера. Требуется OpenWrt 24.10 или новее. Все скачиваемые артефакты
